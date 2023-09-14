@@ -39,5 +39,26 @@ namespace Sallaty.API.Controllers
 
             return Ok(response);
         }
+
+        // GET : localhost:7091/api/Categories
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCategories()
+        {
+           var categories = await catedoryRepository.GetAllAsync();
+
+            var response = new List<CategoryDto>();
+            foreach (var category in categories)
+            {
+                response.Add(new CategoryDto
+                {
+                    Id = category.Id,
+                    Name = category.Name,
+                    UrlHandle = category.UrlHandle
+                });
+            }
+
+            return Ok(response);
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pJz/s0AfsrsUOVAHN3as6niNxBPxa8TwuCErZeBv4NpmCH+KDEj51G8IN+4sxdPQy1j3EUKjinR3awc9+ZIY5A==",
+  "dgSpecHash": "/T4xCu3wOu1xCfvEG74fivDm5kQUBqNcq+QXAo8Zpc/KcGZ4UX5yISndu0fmVjDbVjHgSvhg+5vm0CgAg8+USg==",
   "success": true,
-  "projectFilePath": "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\Sallaty.API.csproj",
+  "projectFilePath": "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\Sallaty.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Muhammad\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Muhammad\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

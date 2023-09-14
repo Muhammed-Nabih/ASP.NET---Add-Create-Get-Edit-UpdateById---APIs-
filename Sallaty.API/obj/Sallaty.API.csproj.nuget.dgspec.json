@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\Sallaty.API.csproj": {}
+    "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\Sallaty.API.csproj": {}
   },
   "projects": {
-    "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\Sallaty.API.csproj": {
+    "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\Sallaty.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\Sallaty.API.csproj",
+        "projectUniqueName": "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\Sallaty.API.csproj",
         "projectName": "Sallaty.API",
-        "projectPath": "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\Sallaty.API.csproj",
+        "projectPath": "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\Sallaty.API.csproj",
         "packagesPath": "C:\\Users\\Muhammad\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\API\\Sallaty.API\\Sallaty.API\\obj\\",
+        "outputPath": "C:\\Users\\Muhammad\\Desktop\\ASP.NET---Add-API-and-create-database-for-it--\\Sallaty.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Muhammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
