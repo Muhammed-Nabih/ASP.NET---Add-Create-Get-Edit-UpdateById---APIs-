@@ -20,7 +20,7 @@ namespace Sallaty.API.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateCategory (CreateCategoryRequestDto request)
+        public async Task<IActionResult> CreateCategory ([FromBody] CreateCategoryRequestDto request)
         {
             var category = new Category
             {
@@ -58,6 +58,26 @@ namespace Sallaty.API.Controllers
                 });
             }
 
+            return Ok(response);
+        }
+
+        //GET : localhost:7091/api/Categories {ID}
+
+        [HttpGet]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> GetCategoryById([FromRoute] Guid id)
+        {
+            var existingCategory = await catedoryRepository.GetById(id);
+            if(existingCategory is null)
+            {
+                return NotFound();
+            }
+            var response = new CategoryDto
+            {
+                Id = existingCategory.Id,
+                Name = existingCategory.Name,
+                UrlHandle = existingCategory.UrlHandle
+            };
             return Ok(response);
         }
     }
