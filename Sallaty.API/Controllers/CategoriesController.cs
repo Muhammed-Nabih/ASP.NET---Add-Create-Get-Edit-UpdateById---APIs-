@@ -61,7 +61,7 @@ namespace Sallaty.API.Controllers
             return Ok(response);
         }
 
-        //GET : localhost:7091/api/Categories {ID}
+        //GET : localhost:7091/api/Categories/{ID}
 
         [HttpGet]
         [Route("{id:Guid}")]
@@ -79,6 +79,35 @@ namespace Sallaty.API.Controllers
                 UrlHandle = existingCategory.UrlHandle
             };
             return Ok(response);
+        }
+
+        //PUT localhost:7091/api/Categories/{ID}
+        [HttpPut]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> EditCategory([FromRoute] Guid id, UpdateCategoryRequestDto request)
+        {
+            var category = new Category
+            {
+                Id = id,
+                Name = request.Name,
+                UrlHandle = request.UrlHandle
+            };
+
+            await catedoryRepository.UpdateAsync(category);
+
+            if(category is null)
+            {
+                return NotFound();
+            }
+
+            var response = new CategoryDto
+            {
+                Id = category.Id,
+                Name = category.Name,
+                UrlHandle = category.UrlHandle
+            };
+            return Ok(response);
+
         }
     }
 }
