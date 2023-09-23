@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿/*using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sallaty.API.Data;
 using Sallaty.API.Models.Domain;
@@ -43,6 +44,7 @@ namespace Sallaty.API.Controllers
         // GET : localhost:7091/api/Categories
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllCategories()
         {
            var categories = await catedoryRepository.GetAllAsync();
@@ -111,3 +113,4 @@ namespace Sallaty.API.Controllers
         }
     }
 }
+*/
